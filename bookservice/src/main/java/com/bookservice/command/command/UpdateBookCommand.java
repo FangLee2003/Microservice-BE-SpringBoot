@@ -1,10 +1,21 @@
-package com.bookservice.command.model;
+package com.bookservice.command.command;
 
-public class BookRequestModel {
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+public class UpdateBookCommand {
+    @TargetAggregateIdentifier
     private String bookId;
     private String name;
     private String author;
     private boolean isReady;
+
+    public UpdateBookCommand(String bookId, String name, String author, boolean isReady) {
+        super();
+        this.bookId = bookId;
+        this.name = name;
+        this.author = author;
+        this.isReady = isReady;
+    }
 
     public String getBookId() {
         return bookId;

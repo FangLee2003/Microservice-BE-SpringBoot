@@ -10,6 +10,7 @@ public class CreateBookCommand {
     private boolean isReady;
 
     public CreateBookCommand(String bookId, String name, String author, boolean isReady) {
+        super();
         this.bookId = bookId;
         this.name = name;
         this.author = author;
@@ -40,11 +41,11 @@ public class CreateBookCommand {
         this.author = author;
     }
 
-    public boolean isReady() {
+    public boolean getIsReady() {
         return isReady;
     }
 
-    public void setReady(boolean ready) {
+    public void setIsReady(boolean ready) {
         isReady = ready;
     }
 }

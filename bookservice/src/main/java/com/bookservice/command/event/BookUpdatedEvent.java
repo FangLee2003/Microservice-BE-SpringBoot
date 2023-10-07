@@ -1,6 +1,6 @@
-package com.bookservice.command.model;
+package com.bookservice.command.event;
 
-public class BookRequestModel {
+public class BookUpdatedEvent {
     private String bookId;
     private String name;
     private String author;
